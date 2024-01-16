@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Management</title>
+    <!-- Add CSS for styling here -->
+  </head>
+  <body>
+    <h1>User Management System</h1>
+
+    <!-- Add your frontend content here -->
+    <!-- Add User Form -->
+    <h2>Add User</h2>
+    <form id="addUserForm">
+      <input
+        type="text"
+        id="phone_number"
+        placeholder="Phone Number"
+        required />
+      <input type="text" id="user_name" placeholder="User Name" required />
+      <input type="text" id="plan" placeholder="Plan" required />
+      <input type="text" id="provider" placeholder="Provider" required />
+      <button type="submit">Add User</button>
+    </form>
+    <h2>Find User</h2>
+    <form id="findUserForm">
+      <input
+        type="text"
+        id="search_phone_number"
+        placeholder="Phone Number"
+        required />
+      <input
+        type="text"
+        id="search_user_name"
+        placeholder="User Name"
+        required />
+      <button type="submit">Find User</button>
+    </form>
+    <!-- Search Results Display -->
+    <div id="searchResults"></div>
+    <button type="button" id="print">Print</button>
+
+    <script src="script.js"></script>
+    <!-- Link to your JavaScript file -->
+
+    <!-- User Data Display -->
+    <div id="userData"></div>
+  </body>
+</html>
